@@ -152,6 +152,7 @@ box-shadow: 3px 52px 128px -45px rgb(174, 168, 174);
   display: none;
 }
 
+
 @media (width < 768px) {
   .card {
     margin-top: -70%;
