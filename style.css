@@ -18,7 +18,7 @@ img {
 }
 
 h1 {
-  font-size: clamp(1.8rem, 1.3391rem + 2.3043vi, 3.125rem);
+  font-size:  clamp(1.75rem, 1.163rem + 2.9348vi, 3.4375rem);
   color: hsl(292, 42%, 14%);
 }
 
@@ -111,7 +111,7 @@ box-shadow: 3px 52px 128px -45px rgb(174, 168, 174);
   justify-content: space-between;
   align-items: center;
   padding-block: 20px;
-  font-weight: bold;
+  font-weight: 600;
   cursor: pointer;
 }
 
