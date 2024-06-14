@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  background-color: hsl(275, 100%, 97%);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: clamp(1.8rem, 1.3391rem + 2.3043vi, 3.125rem);
+  color: hsl(292, 42%, 14%);
+}
+
+p {
+  font-size: clamp(0.875rem, 0.8315rem + 0.2174vi, 1rem);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  width: 100%;
+}
+
+nav img {
+  width: 100%;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: min(90%, 37.5em);
+  /* height: 35.4375em; */
+  padding: 50px 40px 20px 40px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin-top: -20%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+
+.accordion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-top: 20px;
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  border-bottom: 1px solid hsl(275, 100%, 97%);
+}
+
+.slider:last-child {
+  border-bottom: 0;
+}
+
+.question {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.question:before {
+  content: url('img/icon-plus.svg');
+}
+
+.slider.active .question:before {
+  content: url('img/icon-minus.svg');
+}
+
+.slider.active .answer {
+  display: block;
+}
+
+.question p {
+  font-size: clamp(1rem, 0.9565rem + 0.2174vi, 1.125rem);
+  transition: 0.2s;
+  color: hsl(292, 42%, 14%);
+
+}
+
+.question p:hover {
+  color: hsl(281, 83%, 54%);
+}
+
+.answer {
+  display: none;
+  margin-bottom: 34px;
+  color: hsl(292, 16%, 49%);
+  transition: 0.5s all;
+}
+
+.hide {
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+@media (width < 768px) {
+    
+.card {
+  margin-top: -70%;
+}
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
