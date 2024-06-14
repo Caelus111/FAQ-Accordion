@@ -71,7 +71,7 @@ button {
   margin-top: -20%;
 -webkit-box-shadow: 3px 52px 128px -45px rgba(122,112,122,1);
 -moz-box-shadow: 3px 52px 128px -45px rgba(122,112,122,1);
-box-shadow: 3px 52px 128px -45px rgba(122,112,122,1);
+box-shadow: 3px 52px 128px -45px rgb(174, 168, 174);
 }
 
 .card-header {
