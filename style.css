@@ -24,6 +24,7 @@ h1 {
 
 p {
   font-size: clamp(0.875rem, 0.8315rem + 0.2174vi, 1rem);
+  line-height: 1.5;
 }
 
 main {
@@ -68,7 +69,9 @@ button {
   background-color: #fff;
   border-radius: 15px;
   margin-top: -20%;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 10px 20px 110px -17px rgba(122, 112, 122, 1);
+  -moz-box-shadow: 10px 20px 110px -17px rgba(122, 112, 122, 1);
+  box-shadow: 10px 20px 110px -17px rgba(122, 112, 122, 1);
 }
 
 .card-header {
@@ -113,11 +116,11 @@ button {
 }
 
 .question:before {
-  content: url('img/icon-plus.svg');
+  content: url("img/icon-plus.svg");
 }
 
 .slider.active .question:before {
-  content: url('img/icon-minus.svg');
+  content: url("img/icon-minus.svg");
 }
 
 .slider.active .answer {
@@ -128,7 +131,6 @@ button {
   font-size: clamp(1rem, 0.9565rem + 0.2174vi, 1.125rem);
   transition: 0.2s;
   color: hsl(292, 42%, 14%);
-
 }
 
 .question p:hover {
@@ -151,10 +153,9 @@ button {
 }
 
 @media (width < 768px) {
-    
-.card {
-  margin-top: -70%;
-}
+  .card {
+    margin-top: -70%;
+  }
   .desktop {
     display: none;
   }
